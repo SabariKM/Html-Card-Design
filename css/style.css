@@ -1,0 +1,125 @@
+.outerDiv{
+    background: url(../Images/619759.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.teamList{
+    background: white;
+    max-width: 300px;
+    width: 25%;
+    margin: 0 20px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 1s ease;
+    box-shadow: inset 0px 0px 30px 4px #252524;
+}
+.teamList:after{
+    content:"";
+    background-color: #232323;
+    height: 178px;
+    width: 100%;
+    border-radius: 70%;
+    position: absolute;
+    top: -180px;
+    left: 0;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+}
+.teamList:hover:after{
+    top: -100px;
+}
+.teamList:hover .socialmedia{
+    bottom: 0;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+}
+.teamList:hover{
+    transform: translateY(-10px);
+}
+.teamList:hover .team-image{
+    box-shadow: 0 5px 10px #803d3d;
+}
+/* .fb{
+    background: url(../Images/facebook.png) no-repeat;
+}
+.ig{
+    background: url(../Images/facebook.png) no-repeat;
+}
+.twit{
+    background: url(../Images/facebook.png) no-repeat;
+}
+.wtsp{
+    background: url(../Images/facebook.png) no-repeat;
+} */
+.team-image{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin: 20px auto 0;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 1;
+}
+.team-image img{
+    width: 100%; 
+    position:absolute;
+    top: 0;
+    left: 0;
+}
+.team-description{
+    margin: 55px 10px 88px;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.team-description h3,p{
+    background: linear-gradient(88deg,#4e0000,#e02a2a,#ff0000);
+    text-shadow: 2px 2px 5px rgb(71 71 71);
+    letter-spacing: 1px;
+    font-weight: 600;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.socialmedia{
+    position: absolute;
+    bottom: -100px;
+    background: #232323;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+.socialmedia a{
+    text-decoration: none;
+    padding: 0 7px;
+}
+.socialmedia a img{
+    padding: 10px 10px;
+    bottom: -0;
+    z-index: 1;
+    box-shadow: inset 0px 1px 10px rgb(65 65 65);
+    background-color: #e4e4e4;
+    border-radius: 10px;
+}
+@media only screen and (max-width:375px){
+    .outerDiv{
+        display: block;
+        background: linear-gradient(45deg, pink, black);
+        height: 243vh;
+        padding:20px 10px;
+    }
+    .teamList{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
